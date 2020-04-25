@@ -1,13 +1,204 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Учебный: Деним</title>
   </head>
   <body>
-    <header class="page-header">
- 
+    <header class="header">
+      <a class="logo">Nimes</a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Woman</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Man</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">New</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="search">
+        <button class="search__button">
+          <span class="visually-hidden">Кнопка поиска</span>
+        </button>
+        <form action="#" class="search__form">
+          <label for="" class="search__label">
+            <span class="visually-hidden">Поиск</span>
+            <input type="text" class="search__input" />
+          </label>
+        </form>
+      </section>
+
+      <button class="cart">
+        <span class="visually-hidden">Кнопка корзины</span>
+      </button>
     </header>
 
+    <main class="main-content">
+      <section class="features">
+        <img class="features__image" src="" alt="Главная картинка сайта" />
+        <p class="features__description">The quality you deserve</p>
+        <h1 class="features__title">DENIM</h1>
+        <button class="button button__header">Check new collection</button>
+      </section>
+
+      <section class="sale">
+        <h2 class="sale__title">Bestsellers</h2>
+        <a class="all-link" href="#">view all</a>
+
+        <ul class="card">
+          <li class="card__item">
+            <img
+              class="card__img"
+              src=""
+              alt="Карточка товара"
+              width="130"
+              height="160"
+            />
+            <p class="card__title">Jacket</p>
+            <p class="card__price">$ 120</p>
+          </li>
+          <li class="card__item">
+            <img
+              class="card__img"
+              src=""
+              alt="Карточка товара"
+              width="130"
+              height="160"
+            />
+            <p class="card__title">Overalls</p>
+            <p class="card__price">$ 140</p>
+          </li>
+          <li class="card__item">
+            <img
+              class="card__img"
+              src=""
+              alt="Карточка товара"
+              width="130"
+              height="160"
+            />
+            <p class="card__title">Jacket</p>
+            <p class="card__price">$ 90</p>
+          </li>
+          <li class="card__item">
+            <img
+              class="card__img"
+              rc=""
+              alt="Карточка товара"
+              width="130"
+              height="160"
+            />
+            <p class="card__title">Overalls</p>
+            <p class="card__price">$ 160</p>
+          </li>
+        </ul>
+      </section>
+      <article class="promo">
+        <div class="promo__item">
+          <p class="promo__desription">Street fashion collection</p>
+          <h2 class="promo__title">Fall 2019</h2>
+          <button class="button button__promo">Shop now</button>
+        </div>
+        <img
+          class="promo__logo"
+          src=""
+          alt="Реклама"
+          width="320"
+          height="226"
+        />
+      </article>
+
+      <section class="category">
+        <h2 class="category__title">Shop by category</h2>
+        <article>
+          <ul class="card">
+            <li class="card__item">
+              <img
+                class="card__img"
+                src=""
+                alt="Карточка категории"
+                width="130"
+                height="160"
+              />
+              <p class="card__title">Jeans</p>
+            </li>
+            <li class="card__item">
+              <img
+                class="card__img"
+                src=""
+                alt="Карточка категории"
+                width="130"
+                height="126"
+              />
+              <p class="card__title">Shirts</p>
+            </li>
+            <li class="card__item">
+              <img
+                class="card__img"
+                src=""
+                alt="Карточка категории"
+                width="130"
+                height="126"
+              />
+              <p class="card__title">Overalls</p>
+            </li>
+            <li class="card__item">
+              <img
+                class="card__img"
+                src=""
+                alt="Карточка категории"
+                width="130"
+                height="160"
+              />
+              <p class="card__title">Jackets</p>
+            </li>
+          </ul>
+        </article>
+
+        <a class="all-link" href="#">view all</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link footer__link--main">Nîmes</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Sitemap</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Shop</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Service</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Delivery</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Contacts</a>
+        </li>
+
+        <section class="social">
+          <a href="#" class="social__link social__link--facebook">
+            <span class="visually-hidden">facebook</span>
+          </a>
+          <a href="#" class="social__link social__link--instagram">
+            <span class="visually-hidden">instagram</span>
+          </a>
+          <a href="#" class="social__link social__link--pinterst">
+            <span class="visually-hidden">pinterst</span>
+          </a>
+          <a href="#" class="social__link social__link--twitter">
+            <span class="visually-hidden">twitter</span>
+          </a>
+        </section>
+      </ul>
+    </footer>
   </body>
 </html>
