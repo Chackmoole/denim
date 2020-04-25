@@ -5,7 +5,7 @@
     <title>Учебный: Деним</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="header">
       <a class="logo">Nimes</a>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -24,43 +24,53 @@
       <section class="search">
         <button class="search__button"></button>
         <form action="#" class="search__form">
-          <label for="" class="search__label"></label>
+          <label for="" class="search__label">
+            <span class="visually-hidden">Поиск</span>
+            <input type="text" class="search__input">
+          </label>
         </form>
-      </section class="search">
+      </section>
      
       <button class="cart"></button>
 
-      <img  class="page-header__image"  src="" alt="Главная картинка сайта">
-      <p class="page-header__description">The quality you deserve</p>
-      <h1 class="page-header__title">DENIM</h1>
-      <button class="button button__header">Check new collection</button>
+
     </header>
     
     <main class="main-content">
 
+      <section class="features">
+        <img  class="features__image"  src="" alt="Главная картинка сайта">
+        <p class="features__description">The quality you deserve</p>
+        <h1 class="features__title">DENIM</h1>
+        <button class="button button__header">Check new collection</button>
+      </section>
+
       <section class="sale">
          <h2 class="sale__title">Bestsellers</h2>
-         <a href="#">view all</a>
-         <ul>
-           <li class="sale__card">
-            <img class="sale__image" src="" alt="Карточка товара" width="130" height="160">
-            <p class="sale__item">Jacket</p>
-            <p class="sale__price">$ 120</p>
+         <article class="nav-link">
+          <a class="nav-link__link" href="#">view all</a>
+         </article>
+         
+         <ul class="card card--section">
+           <li class="card__item">
+            <img class="card__img" src="" alt="Карточка товара" width="130" height="160">
+            <p class="card__title">Jacket</p>
+            <p class="card__price">$ 120</p>
            </li>
-           <li class="sale__card">
-            <img class="sale__image" src="" alt="Карточка товара" width="130" height="160">
-            <p class="sale__item">Overalls</p>
-            <p class="sale__price">$ 140</p>
+           <li class="card__item">
+            <img class="card__img" src="" alt="Карточка товара" width="130" height="160">
+            <p class="card__title">Overalls</p>
+            <p class="card__price">$ 140</p>
            </li>
-           <li class="sale__card">
-            <img class="sale__image" src="" alt="Карточка товара" width="130" height="160">
-            <p class="sale__item">Jacket</p>
-            <p class="sale__price">$ 90</p>
+           <li class="card__item">
+            <img class="card__img" src="" alt="Карточка товара" width="130" height="160">
+            <p class="card__title">Jacket</p>
+            <p class="card__price">$ 90</p>
            </li>
-           <li class="sale__card">
-            <img class="sale__image" rc="" alt="Карточка товара" width="130" height="160">
-            <p class="sale__item">Overalls</p>
-            <p class="sale__price">$ 160</p>
+           <li class="card__item">
+            <img class="card__img" rc="" alt="Карточка товара" width="130" height="160">
+            <p class="card__title">Overalls</p>
+            <p class="card__price">$ 160</p>
            </li>
          </ul>
       </section>
@@ -75,48 +85,54 @@
 
       <section class="category">
         <h2 class="category__title">Shop by category</h2>
-        <ul class="category__list">
-          <li class="category__item">
-            <img class="category__image" src="" alt="Карточка категории" width="130" height="160">
-            <p class="category__description">Jeans</p>
+        <article>
+          <ul class="card card--category">
+          <li class="card__item">
+            <img class="card__img" src="" alt="Карточка категории" width="130" height="160">
+            <p class="card__title">Jeans</p>
           </li>
-          <li class="category__item">
-            <img class="category__image" src="" alt="Карточка категории" width="130" height="126">
-            <p class="category__description">Shirts</p>
+          <li class="card__item">
+            <img class="card__img card__img--short" src="" alt="Карточка категории" width="130" height="126">
+            <p class="card__title">Shirts</p>
           </li>
-          <li class="category__item">
-            <img class="category__image" src="" alt="Карточка категории" width="130" height="126">
-            <p class="category__description">Overalls</p>
+          <li class="card__item">
+            <img class="card__img card__img--short" src="" alt="Карточка категории" width="130" height="126">
+            <p class="card__title">Overalls</p>
           </li>
-          <li class="category__item">
-            <img class="category__image" src="" alt="Карточка категории" width="130" height="160">
-            <p class="category__description">Jackets</p>
+          <li class="card__item">
+            <img class="card__img" src="" alt="Карточка категории" width="130" height="160">
+            <p class="card__title">Jackets</p>
           </li>
         </ul>
-        <a class="category__link" href="#">View all</a>
+        </article>
+        
+        <article class="nav-link">
+          <a class="nav-link__link nav-link__link--category" href="#">view all</a>
+        </article>
       </section>
      
     </main>
 
     <footer class="footer">
       <ul class="footer__list">
-        <li class="footer__link">
-          <p class="footer__item">Nîmes</p>
+        <li class="footer__item">
+          <a href="footer__link">Nîmes</a>
         </li>
-        <li class="footer__link">
-          <p class="footer__item">Sitemap</p>
+        <li class="footer__item">
+          <a href="footer__link">Sitemap</a>
+        </li>       
+        <li class="footer__item">
+          <a href="footer__link">Shop</a>
+        </li>        
+        <li class="footer__item">
+          <a href="footer__link">Service</a>
+        </li>        
+        <li class="footer__item">
+          <a href="footer__link">Delivery</a>
+        </li>        
+        <li class="footer__item">
+          <a href="footer__link">Contacts</a>
         </li>
-        <li class="footer__link">
-          <p class="footer__item">Shop</p>
-        </li>
-        <li class="footer__link">
-          <p class="footer__item">Service</p>
-        </li>
-        <li class="footer__link">
-          <p class="footer__item">Delivery</p>
-        </li>
-        <li class="footer__link">
-          <p class="footer__item">Contacts</p>
 
       <section class="social">
         <a href="#" class="social__facebook">
